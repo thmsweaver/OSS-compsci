@@ -21,7 +21,6 @@ int get_num_coins_owed(float dollars_owed)
     int coins_owed = 0;
 
     int available_coins_length = sizeof(available_coins) / sizeof(int);
-    printf("available_coins_length %i\n", available_coins_length);
     for (int i = 0; i < available_coins_length; i++)
     {
         coins_owed += remaining_cents_owed / available_coins[i];
